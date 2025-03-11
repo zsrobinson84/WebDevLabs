@@ -20,42 +20,27 @@
             <a href="contact.html">Contact Me</a>
             <a href="fun.html">For Fun</a>
         </nav>
+    </header>
         <div class="main">
             <h2>Contact Me</h2>
-            <div class="container">
-                <form action="action_page.php">
-              
-                  <label for="fname">Your name (required)</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
-              
-                  <label for="lname">Your email</label>
-                  <input type="text" id="email1" name="email1" placeholder="Your email..">
-
-                  <label for="subject">Your comment</label>
-                  <textarea id="subject" name="subject" style="height:200px"></textarea>
-              
-                  <input type="submit" value="SEND">
-              
+            <div class="main">
+                <h2>Contact Me</h2>
+                <form>
+                    <label for="name">Your name (required)</label>
+                    <input type="text" id="name" required>
+                    <label for="email">Your email</label>
+                    <input type="email" id="email">
+                    <label for="comment">Your comment</label>
+                    <textarea id="comment" cols="30" rows="10"></textarea>
+                    <input type="submit" value="SEND">
                 </form>
-              </div>
-            <br>
-            <table >
-                <tr>
-                    <th>Contact Method Description</th>
-                <tr>
-                    <td>Email</td>
-                </tr>
-                <tr>
-                    <td>Phone</td>
-                </tr>
-                <tr>
-                    <td>LinkedIn</td>
-                </tr>
-            </table>
-        </div>
-    </header>
-    <footer>
-        <p>© 2025 designed and coded by Zoe Robinson</p>
-    </footer>
+                <table>
+                    <tr><th>Contact Method</th><th>Description</th></tr>
+                    <tr><td>Email</td><td></td></tr>
+                    <tr><td>Phone</td><td></td></tr>
+                    <tr><td>LinkedIn</td><td></td></tr>
+                </table>
+            </div>
+    <footer>&copy; 2025 designed and coded by Zoe Robinson</footer>
 </body>
 </html>

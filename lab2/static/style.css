@@ -9,8 +9,22 @@
         font-style: normal;
         font-variation-settings: "wdth" 100;
     }
+
     #webname {
         background-color: #92ad70;
+    }
+
+    a {
+        text-decoration: none;
+        color: #92ad70;
+        margin-right: 15px;
+      }
+
+    tr:nth-child(odd) {
+        background-color: #808080;
+        text-emphasis-color: black;
+        padding: 12px;
+        width: fit-content;
     }
     
 }
