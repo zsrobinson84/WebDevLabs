@@ -1,4 +1,3 @@
-
 var x = 5;
 var y = 7;
 var z = x + y;
@@ -11,7 +10,7 @@ console.log(C);
 
 function SumNPrint(x1, x2){
     var x3 = x1 + x2;
-    // console.log(x3);
+    console.log(x3);
     return x3
 }
 
@@ -38,18 +37,35 @@ const L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 //     return -1
 // }
 
-function findTheBanana(fruit){
-    if(fruit == "Banana"){
-        window.alert("we found a Banana"); //in the right array?
-    }
+function findTheBananaForEach(arr) {
+    arr.forEach((item, index) => {
+        if (item === "Banana") {
+            alert("Banana found in the array at index " + index);
+        }
+    });
 }
 
-console.log(findTheBanana(L1));
-console.log(findTheBanana(L2));
+findTheBananaForEach(L1);
+findTheBananaForEach(L2);
 
-// notes:
-// var d = new Date();
-// var h = d.getHours();
-// <head id="123"></head>
-// to access:
-// document.getElementById("123").innerHTML = h;
+function greetingFunc() {
+    var d = new Date();
+    var h = d.getHours();
+    let name = ", I am Zoe";
+    let message = "";
+
+    if (h < 12) {
+        message = "Good morning" + name;
+    } else if (h >= 12 && h < 18) {
+        message = "Good afternoon" + name;
+    } else if (h >= 18 && h < 20) {
+        message = "Good evening" + name;
+    } else {
+        message = "Good night" + name;
+    }
+
+    document.getElementById("greeting").innerHTML = message;
+}
+
+greetingFunc();
+
