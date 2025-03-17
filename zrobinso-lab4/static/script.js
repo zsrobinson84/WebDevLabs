@@ -45,8 +45,8 @@ function findTheBananaForEach(arr) {
     });
 }
 
-findTheBananaForEach(L1);
-findTheBananaForEach(L2);
+// findTheBananaForEach(L1);
+// findTheBananaForEach(L2);
 
 function greetingFunc() {
     var d = new Date();
@@ -69,6 +69,13 @@ function greetingFunc() {
 
 greetingFunc();
 
+function addYear() {
+    var d = new Date()
+    var y = d.getFullYear(); //found with documentation
+    var e = document.getElementById("copyYear");
+    e.innerHTML += " " + y;
+}
+
 
 /* notes from class
     Carolsel, shadowbox, 
@@ -77,19 +84,13 @@ greetingFunc();
 
     Demo:
     function addYear()
-    {
-        var d = new Date()
-        var y - d.getFullYear();
-        Var e = document.getElementByID("copy year" = in footer)
-        E.innerHTML += y;
-    }
 
     Click to see
 
     <button id = "see more" onclick = "showList()">See more</button>
 
     read more button:
-    
+
 
 
 
