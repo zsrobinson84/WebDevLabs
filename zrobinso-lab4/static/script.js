@@ -69,3 +69,28 @@ function greetingFunc() {
 
 greetingFunc();
 
+
+/* notes from class
+    Carolsel, shadowbox, 
+    API Examples: having weather, distance from incline, trip advisor/google rviews
+
+
+    Demo:
+    function addYear()
+    {
+        var d = new Date()
+        var y - d.getFullYear();
+        Var e = document.getElementByID("copy year" = in footer)
+        E.innerHTML += y;
+    }
+
+    Click to see
+
+    <button id = "see more" onclick = "showList()">See more</button>
+
+    read more button:
+    
+
+
+
+*/
