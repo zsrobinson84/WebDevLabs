@@ -76,12 +76,16 @@ function addYear() {
     e.innerHTML += " " + y;
 }
 
+function showList() {
+    document.getElementById("List").style.display = "block";
+    document.getElementById("seeMore").style.display = "none";
+}
 
 /* notes from class
     Carolsel, shadowbox, 
     API Examples: having weather, distance from incline, trip advisor/google rviews
 
-
+    add footer to every page!!!!!!!!!!
     Demo:
     function addYear()
 

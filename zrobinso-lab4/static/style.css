@@ -49,3 +49,7 @@ td {
 tr:nth-child(odd) {
     background-color: rgba(211, 211, 211, 1);
 }
+
+#List{
+    display: none;
+}
