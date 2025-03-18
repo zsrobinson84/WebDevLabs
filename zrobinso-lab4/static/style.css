@@ -53,3 +53,11 @@ tr:nth-child(odd) {
 #List{
     display: none;
 }
+
+#showLess {
+    display: none;
+}
+
+#intro2 {
+    display: none;
+}

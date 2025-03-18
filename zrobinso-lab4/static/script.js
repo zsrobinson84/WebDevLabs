@@ -81,6 +81,19 @@ function showList() {
     document.getElementById("seeMore").style.display = "none";
 }
 
+$("#showLess").click(function() {
+    $("#intro2").hide();
+    $("#showLess").hide();
+    $("#showMore").show();
+});
+
+$("#showMore").click(function() {
+    $("#intro2").show();
+    $("#showLess").show();
+    $("#showMore").hide();
+});
+
+
 /* notes from class
     Carolsel, shadowbox, 
     API Examples: having weather, distance from incline, trip advisor/google rviews
