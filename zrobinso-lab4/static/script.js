@@ -93,22 +93,11 @@ $("#showMore").click(function() {
     $("#showMore").hide();
 });
 
-
-/* notes from class
-    Carolsel, shadowbox, 
-    API Examples: having weather, distance from incline, trip advisor/google rviews
-
-    add footer to every page!!!!!!!!!!
-    Demo:
-    function addYear()
-
-    Click to see
-
-    <button id = "see more" onclick = "showList()">See more</button>
-
-    read more button:
-
-
-
-
-*/
+function validate(){
+    var userName = document.getElementById("name");
+    var userEmail = document.getElementById("email");
+    var userText = document.getElementById("comment");
+    if (!userName.checkValidity() || !userEmail.checkValidity() || !userText.checkValidity()) {
+        document.getElementById("validateMsg").innerHTML = "Please fill out all fields correctly.";
+    }
+}

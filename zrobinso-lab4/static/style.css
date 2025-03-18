@@ -61,3 +61,7 @@ tr:nth-child(odd) {
 #intro2 {
     display: none;
 }
+
+#validateMsg {
+    text-align: center;
+}
