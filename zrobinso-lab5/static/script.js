@@ -1,80 +1,145 @@
+// Basic JavaScript Statement
 var x = 5;
 var y = 7;
 var z = x + y;
 console.log(z);
 
-let A = "Hello ";
-let B = "world!";
-let C = A + B;
+var A = 'Hello';
+var B = ' world!';
+var C = A + B;
 console.log(C);
 
-function SumNPrint(x1, x2){
+// Basic JavaScript Function
+function SumNPrint(x1, x2) {
     var x3 = x1 + x2;
     console.log(x3);
-    return x3
-}
+ }
+ SumNPrint(x,y);
+ SumNPrint(A,B);
 
-console.log(SumNPrint(x, y));
-console.log(SumNPrint(A, B));
+ // Conditional Statement
+ if (C.length > z) {
+    console.log(C);
+ } else if (z > C.length) {
+    console.log(z);
+ } else {
+    console.log("good job!");
+ }
 
-if(C.length == z){
-    console.log("good job!")
-} else if (C.length > z){
-    console.log(C)
-} else {
-    console.log(z)
-}
+/*
+// For Loop
+// Define two arrays containing fruit names
+var L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
+var L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
-const L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
-const L2 = ["Apple", "Banana", "Kiwi", "Orange"];
-
-// function findTheBanana(array1){
-//     for (var i = 0; i < array1.length; i++){
-//         if (array1[i] == "Banana"){
-//             window.alert("found the Banana in " + i); 
-//         }
-//     }
-//     return -1
-// }
-
-function findTheBananaForEach(arr) {
-    arr.forEach((item, index) => {
-        if (item === "Banana") {
-            alert("Banana found in the array at index " + index);
+// Function to find "Banana" using a for loop
+function findTheBanana(array) {
+    // Loop through each item in the array
+    for (let index = 0; index < array.length; index++) {
+        // Check if the current element is "Banana"
+        if (array[index] === "Banana") {
+            // Show an alert with the index where "Banana" was found
+            alert("found the Banana in index " + index);
         }
-    });
-}
-
-// findTheBananaForEach(L1);
-// findTheBananaForEach(L2);
-
-function greetingFunc() {
-    var d = new Date();
-    var h = d.getHours();
-    let name = ", I am Zoe";
-    let message = "";
-
-    if (h < 12) {
-        message = "Good morning" + name;
-    } else if (h >= 12 && h < 18) {
-        message = "Good afternoon" + name;
-    } else if (h >= 18 && h < 20) {
-        message = "Good evening" + name;
-    } else {
-        message = "Good night" + name;
     }
-
-    document.getElementById("greeting").innerHTML = message;
 }
 
+// Call the function for both arrays
+findTheBanana(L1);
+findTheBanana(L2);
+
+// Using a forEach loop to check for "Banana" in L1 and L2
+L1.forEach((element, index) => {
+    if (element === "Banana") {
+        alert("We found a banana in the first array at index " + index);
+    }
+});
+
+L2.forEach((element, index) => {
+    if (element === "Banana") {
+        alert("We found a banana in the second array at index " + index);
+    }
+});
+
+
+
+// Conditional Date Greeting for Console
+function greetingFunc() {
+    var d = new Date();  // Create a new Date object to get the current time
+    var h = d.getHours();  // Get the current hour (0-23)
+
+    if (h>=5 && h<12) {
+        console.log("Good morning!"); // Morning greeting (5 AM - 11:59 AM)
+    } else if (h>=12 && h<18) {
+        console.log("Good afternoon!"); // Afternoon greeting (12 PM - 5:59 PM)
+    } else if (h>=18 && h<20) {
+        console.log("Good evening!"); // Evening greeting (6 PM - 7:59 PM)
+    } else if (h>=20 && h<24 ||  h<5) {
+        console.log("Good night!"); // Night greeting (8 PM - 4:59 AM)
+    }
+ }
 greetingFunc();
+*/
 
-function addYear() {
-    var d = new Date()
-    var y = d.getFullYear(); //found with documentation
-    var e = document.getElementById("copyYear");
-    e.innerHTML += " " + y;
+ /*
+// Conditional Date Greeting for Broswer
+function greetingFunc() {
+    var d = new Date();  // Create a new Date object to get the current time
+    var h = d.getHours();  // Get the current hour (0-23)
+    var E = document.getElementById("greeting");  // Select the HTML element with ID "greeting"
+
+ // Check the time and update the greeting accordingly
+    if (h >= 5 && h < 12) {  
+        E.innerHTML = "Good morning, my name is your name.";  // Morning greeting (5 AM - 11:59 AM)
+    } else if (h >= 12 && h < 18) {  
+        E.innerHTML = "Good afternoon, my name is your name.";  // Afternoon greeting (12 PM - 5:59 PM)
+    } else if (h >= 18 && h < 20) {  
+        E.innerHTML = "Good evening, my name is your name.";  // Evening greeting (6 PM - 7:59 PM)
+    } else {  
+        E.innerHTML = "Good night, my name is your name.";  // Night greeting (8 PM - 4:59 AM)
+    } 
 }
+greetingFunc();
+*/
+
+// Conditional Date Greeting for index.html ONLY
+
+// Function to display a time-based greeting
+function greetingFunc() {
+    var d = new Date();  // Create a new Date object to get the current time
+    var h = d.getHours();  // Get the current hour (0-23)
+    var E = document.getElementById("greeting");  // Select the HTML element with ID "greeting"
+
+    // Check the time and update the greeting accordingly
+    if (h >= 5 && h < 12) {  
+        E.innerHTML = "Good morning, my name is Zoe Robinson.";  // Morning greeting (5 AM - 11:59 AM)
+    } else if (h >= 12 && h < 18) {  
+        E.innerHTML = "Good afternoon, my name is Zoe Robinson.";  // Afternoon greeting (12 PM - 5:59 PM)
+    } else if (h >= 18 && h < 20) {  
+        E.innerHTML = "Good evening, my name is Zoe Robinson.";  // Evening greeting (6 PM - 7:59 PM)
+    } else {  
+        E.innerHTML = "Good night, my name is Zoe Robinson.";  // Night greeting (8 PM - 4:59 AM)
+    } 
+}
+
+// Get the current page URL
+var L = window.location.href;
+console.log(L);  // Log the full URL to the console for debugging
+
+// Check if the current page is "index.html" before running the greeting function
+if (L.includes("index.html")) {  
+   greetingFunc();  // Call the function to update the greeting
+}
+
+// Get the Year for the Footer
+function addYear() {
+    var d = new Date(); // Creates a new Date object
+    var y = d.getFullYear(); // Extracts the current year (e.g., 2025)
+    var E = document.getElementById("copyYear"); // Finds the element with ID "copyYear"
+    E.innerHTML+=y;  // Appends the year to the existing content
+ } 
+
+
 
 function showList() {
     document.getElementById("List").style.display = "block";
@@ -93,7 +158,8 @@ $("#showMore").click(function() {
     $("#showMore").hide();
 });
 
-function validate(){
+  // Form validation
+  function validate(){
     var userName = document.getElementById("name");
     var userEmail = document.getElementById("email");
     var userText = document.getElementById("comment");
