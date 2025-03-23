@@ -26,15 +26,31 @@
         </nav>
     </header>
     <div class="main">
-        <h2>Things I Love To Do For Fun</h2>
-        <button id="seeMore" onclick="showList()">Click to see...</button>
-        <ul id="List">
-            <li>Listen to music</li>
-            <li>Try new cooking recipes</li>
-            <li>Visit cafes</li>
-            <li>Play video games</li>
-        </ul>
-    </div>
+        <div id="item1">
+            <h2>Things I Love To Do For Fun</h2>
+            <!-- <button id="seeMore" onclick="showList()">Click to see...</button> -->
+            <ul id="List">
+                <li>Listen to music</li>
+                <li>Try new cooking recipes</li>
+                <li>Visit cafes</li>
+                <li>Play video games</li>
+            </ul>
+        </div>
+        <div id="item2">
+            <img src="../static/funImage.png" alt="Photo of me having fun" id="fun" width="500" height="600">
+        </div>
+        <div id="item3">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/deo1d5weKao?si=KEWAS6O1uvrfRbgL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div id="item4">
+            <div class="container">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick="getAdvice()">Get Advice</button>
+            </div>
+        </div>
+    </div>  
     <footer id="copyYear"> designed and coded by Zoe Robinson &copy;</footer>
 </body>
 </html>
+

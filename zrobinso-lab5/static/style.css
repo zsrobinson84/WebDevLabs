@@ -44,9 +44,9 @@ th {
     background-color: lightgray;
  }
 
-#List{
+/* #List{
     display: none;
-}
+} */
 
 #showLess {
     display: none;
@@ -59,4 +59,24 @@ th {
 #validateMsg {
     text-align: max-content;
     margin: auto;
+}
+
+#fun {
+    border-radius: 100%;
+}
+
+
+.container {
+    border-radius: 100%;
+    display: inline-block;
+    border-radius: 10%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container > button {
+    background-color: #92ad70;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
 }

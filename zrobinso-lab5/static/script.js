@@ -141,10 +141,10 @@ function addYear() {
 
 
 
-function showList() {
-    document.getElementById("List").style.display = "block";
-    document.getElementById("seeMore").style.display = "none";
-}
+// function showList() {
+//     document.getElementById("List").style.display = "block";
+//     document.getElementById("seeMore").style.display = "none";
+// }
 
 $("#showLess").click(function() {
     $("#intro2").hide();
