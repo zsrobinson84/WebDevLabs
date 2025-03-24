@@ -25,25 +25,31 @@
             <a href="fun.html">for fun</a>
         </nav>
     </header>
-    <div class="main">
-        <h2>Contact Me</h2>
-        <form>
-            <label for="name">Your name (required)</label>
-            <input type="text" id="name" required>
-            <label for="email">Your email</label>
-            <input type="email" id="email">
-            <label for="comment">Your comment</label>
-            <textarea id="comment" cols="30" rows="10"></textarea>
-            <input type="submit" value="Send" onclick="validate()">
-        </form>
-        <p id="validateMsg"></p>
-        <table>
-            <tr><th>Contact Method</th><th>Description</th></tr>
-            <tr><td>Email</td><td></td></tr>
-            <tr><td>Phone</td><td></td></tr>
-            <tr><td>LinkedIn</td><td></td></tr>
-        </table>
+    <div class="mainLayout">
+        <div id="item1">
+            <h2>Find Me</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m24!1m12!1m3!1d808.5742301366536!2d-79.90671566330882!3d40.43444160755104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m9!3e3!4m3!3m2!1d40.4338757!2d-79.9055978!4m3!3m2!1d40.434394!2d-79.9059575!5e0!3m2!1sen!2sus!4v1742778722686!5m2!1sen!2sus" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div id="item2">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="name">Your name (required)</label>
+                <input type="text" id="name" required>
+                <label for="email">Your email</label>
+                <input type="email" id="email">
+                <label for="comment">Your comment</label>
+                <textarea id="comment" cols="30" rows="10"></textarea>
+                <input type="submit" value="Send" onclick="validate()">
+            </form>
+            <p id="validateMsg"></p>
+        </div>
     </div>
+    <table>
+        <tr><th>Contact Method</th><th>Description</th></tr>
+        <tr><td>Email</td><td></td></tr>
+        <tr><td>Phone</td><td></td></tr>
+        <tr><td>LinkedIn</td><td></td></tr>
+    </table>
     <footer id="copyYear"> designed and coded by Zoe Robinson &copy;</footer>
 </body>
 </html>

@@ -80,3 +80,20 @@ th {
     padding: 10px;
     border-radius: 5px;
 }
+
+.mainLayout {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 20px;
+    width:100%;
+
+}
+
+.mainLayout > div {
+    max-width: 48%;
+    flex-basis:30%;
+}

@@ -167,3 +167,28 @@ $("#showMore").click(function() {
         document.getElementById("validateMsg").innerHTML = "Please fill out all fields correctly.";
     }
 }
+
+function getAdvice(){
+    fetch("https://api.adviceslip.com/advice")
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        .then(data => {
+            document.getElementById("adviceText").innerText = data.slip.advice;
+        })
+        .catch(error => {
+            document.getElementById("adviceText").innerText = "Error fetching advice: " + error.message;
+        });
+}
+
+// Create a function called getAdvice().
+// Use fetch() to request advice from https://api.adviceslip.com/advice
+// Convert the response to JSON and extract the "advice" text
+// Update the webpage by setting document.getElementById("adviceText").innerText to the advice
+// Handle errors using .catch() to display an error message if something goes wrong
+// Call getAdvice() when a button is clicked by adding onclick="getAdvice()" to your button in the HTML
+
+
