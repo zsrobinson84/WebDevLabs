@@ -129,13 +129,13 @@ header{
 
 nav{
     grid-area: nav;
-    background-color: salmon;
+    background-color: black;
 }
 
 figure{
     grid-area: main-img;
     background-color: lightblue;
-    height: 30vh;
+    height: 46vh;
 }
 main{
     grid-area: main;
