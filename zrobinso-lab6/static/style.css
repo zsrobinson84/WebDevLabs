@@ -99,18 +99,6 @@ th {
 }
 
 
-/* notes: 
-@media only screen and (max-width: 600px) {
-    grid container thingie, copy paste and fit for iphone 
-}
-
-active nav bar:
- links = document.querySelectorAll('nav a').for
- newLinks = Array.from(links);
- links.forEach(element => {
-    console.log(element[]);
-*/
-
 /* TEMPLATE */
 .containers{
     display: grid;
@@ -129,14 +117,23 @@ header{
 
 nav{
     grid-area: nav;
-    background-color: black;
+    background-color: lightskyblue;
 }
 
 figure{
     grid-area: main-img;
     background-color: lightblue;
-    height: 46vh;
+    height: 50vh;
+    width: 100%;
 }
+
+figure img {
+    max-width: 100%;
+    max-height: 100%; 
+    height: auto; 
+    width: auto; 
+}
+
 main{
     grid-area: main;
     background-color: lightcoral;
@@ -150,10 +147,71 @@ footer{
     background-color: lightgray;
 }
 
-/* <div class = "containers">
-<header>Header</header>
-<nav>Navigation</nav>
-<figure>Figure</figure>
-<main>Main Content</main>
-<summary>Summary</summary>
-<footer>Footer</footer> */
+#hamburger {
+    display: none;
+    /* font-size: 24px; */
+    /* cursor: pointer;
+    color: white; */
+}
+
+@keyframes flicker {
+    0% { opacity: 1; }
+    25% { opacity: 0.2; }
+    50% { opacity: 0.8; }
+    75% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
+
+.flicker {
+    color: white;
+    text-align: center;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ff0000, 0 0 15px #ff7300;
+    animation: flicker 1.5s infinite alternate;
+}
+
+
+/* IPHONE ADAPTION */
+@media only screen and (max-width: 600px) {
+    .mainLayout {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin: 20px;
+        width:100%;
+    }
+
+    .mainLayout > div {
+        max-width: 100%;
+        flex-basis:100%;
+    }
+
+    .containers{
+        display: grid;
+        grid-template-areas: 
+        'header'
+        'nav'
+        'main-img'
+        'main'
+        'bottom'
+        'footer';
+    }
+    #hamburger {
+        display: block; /* Show the hamburger icon on mobile */
+    }
+
+}
+
+/* notes: 
+@media only screen and (max-width: 600px) {
+    grid container thingie, copy paste and fit for iphone 
+}
+
+active nav bar:
+ links = document.querySelectorAll('nav a').for
+ newLinks = Array.from(links);
+ links.forEach(element => {
+    console.log(element[]);
+*/
