@@ -109,12 +109,12 @@ th {
     'footer';
 }
 
-header{
+.headerTemplate{
     grid-area: header;
     background-color: #92ad70;
 }
 
-nav{
+.navTemplate{
     grid-area: nav;
     background-color: lightskyblue;
 }
@@ -174,28 +174,13 @@ footer{
 .flicker {
     color: white;
     text-align: center;
-    text-shadow: 0 0 5px #ffffff, 0 0 10px #ff0000, 0 0 15px #ff7300;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px lightcoral, 0 0 15px lightcoral;
     animation: flicker 1.5s infinite alternate;
 }
 
 
 /* IPHONE ADAPTION */
 @media only screen and (max-width: 600px) {
-    /* .mainLayout {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        gap: 30px;
-        margin: 20px;
-        width:100%;
-    }
-
-    .mainLayout > div {
-        max-width: 100%;
-        flex-basis:100%;
-    } */
 
     .containers{
         display: grid;
@@ -219,9 +204,9 @@ footer{
         padding: 1rem;
         background-color: lightcoral;
     }
-    
+
     #hamburger {
-        display: block; /* Show the hamburger icon on mobile */
+        display: block; 
     }
 
 }
