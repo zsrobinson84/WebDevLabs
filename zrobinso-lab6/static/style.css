@@ -103,11 +103,10 @@ th {
 .containers{
     display: grid;
     grid-template-areas: 
-    'header header'
-    'nav nav'
-    'main-img main'
-    'bottom bottom'
-    'footer footer';
+    'header'
+    'nav'
+    'main'
+    'footer';
 }
 
 header{
@@ -120,11 +119,10 @@ nav{
     background-color: lightskyblue;
 }
 
-figure{
-    grid-area: main-img;
+.mainImg{
+    grid-area: mainImg;
     background-color: lightblue;
-    height: 50vh;
-    width: 100%;
+    padding: 4%;
 }
 
 figure img {
@@ -136,12 +134,26 @@ figure img {
 
 main{
     grid-area: main;
+    display: grid;
+    grid-template-areas: 
+    "mainImg mainContent"
+    "bottomContent bottomContent";
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto auto;
+    gap: 1rem;
+    padding: 1rem;
     background-color: lightcoral;
 }
+
+.mainContent{
+    grid-area: mainContent;
+}
+
 summary{
-    grid-area: bottom;
+    grid-area: bottomContent;
     background-color: lightgreen;
 }
+
 footer{
     grid-area: footer;
     background-color: lightgray;
@@ -149,9 +161,6 @@ footer{
 
 #hamburger {
     display: none;
-    /* font-size: 24px; */
-    /* cursor: pointer;
-    color: white; */
 }
 
 @keyframes flicker {
@@ -172,7 +181,7 @@ footer{
 
 /* IPHONE ADAPTION */
 @media only screen and (max-width: 600px) {
-    .mainLayout {
+    /* .mainLayout {
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
@@ -186,18 +195,31 @@ footer{
     .mainLayout > div {
         max-width: 100%;
         flex-basis:100%;
-    }
+    } */
 
     .containers{
         display: grid;
         grid-template-areas: 
         'header'
         'nav'
-        'main-img'
         'main'
-        'bottom'
         'footer';
     }
+
+    .main{
+        grid-area: main;
+        display: grid;
+        grid-template-areas: 
+        "mainImg"
+        "mainContent"
+        "bottomContent";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: lightcoral;
+    }
+    
     #hamburger {
         display: block; /* Show the hamburger icon on mobile */
     }
