@@ -184,11 +184,27 @@ function getAdvice(){
         });
 }
 
-// Create a function called getAdvice().
-// Use fetch() to request advice from https://api.adviceslip.com/advice
-// Convert the response to JSON and extract the "advice" text
-// Update the webpage by setting document.getElementById("adviceText").innerText to the advice
-// Handle errors using .catch() to display an error message if something goes wrong
-// Call getAdvice() when a button is clicked by adding onclick="getAdvice()" to your button in the HTML
+// none of this is working idk why
+// // ADDING CLASS ACTIVE TO CURRENT PAGE FOR NAV
+// document.addEventListener("DOMContentLoaded", function() {
+//     const navLinks = document.querySelectorAll('.navTemplate a');  
+//     const current = window.location.pathname;
+//     navLinks.forEach(link => {
+//         const linkPath = new URL(link.href).pathname;
+//         const isHome = linkPath.endsWith("index.html") && (current === "/" || current.endsWith("index.html"));
+//         if (linkPath === current || isHome) {
+//             link.classList.add('active');  
+//         }
+//     });
+// });
 
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     const hamburger = document.getElementById("hamburger");
+//     const navLinks = document.querySelector(".nav-links");
+
+//     hamburger.addEventListener("click", function () {
+//         navLinks.classList.toggle("active"); 
+//     });
+// });
 

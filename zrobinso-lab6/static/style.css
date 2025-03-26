@@ -112,6 +112,7 @@ th {
 .headerTemplate{
     grid-area: header;
     background-color: #92ad70;
+    font-family: "Roboto", sans-serif;
 }
 
 .navTemplate{
@@ -178,6 +179,14 @@ footer{
     animation: flicker 1.5s infinite alternate;
 }
 
+.active{
+    font-weight: bold;
+    color: black;  
+}
+/* .navTemplate a.active {
+    font-weight: bold;
+    color: black;  
+} */
 
 /* IPHONE ADAPTION */
 @media only screen and (max-width: 600px) {
